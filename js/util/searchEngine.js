@@ -8,7 +8,7 @@ var currentSearchEngine = {
   searchURL: '%s'
 }
 
-var defaultSearchEngine = 'DuckDuckGo'
+var defaultSearchEngine = 'Mysteryinc'
 
 var searchEngines = {
   DuckDuckGo: {
@@ -69,7 +69,12 @@ var searchEngines = {
     searchURL: 'https://yandex.com/search/?text=%s',
     suggestionsURL: 'https://suggest.yandex.com/suggest-ff.cgi?part=%s',
     queryParam: 'text'
-  },
+    },
+  Mysteryinc: {
+      name: 'Mystery.inc',
+      searchURL: 'https://mystery-search.github.io/#gsc.tab=0&gsc.q=%s',
+      queryParam: 'q'
+    },
   none: {
     name: 'none',
     searchURL: 'http://%s'

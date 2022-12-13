@@ -21,7 +21,7 @@ function toArch (platform) {
 require('./createPackage.js')('linux', { arch: toArch(platform) }).then(function (path) {
   var installerOptions = {
     artifactName: 'min-${version}-${arch}.deb',
-    packageName: 'min',
+    packageName: 'Whirlwind min',
     icon: 'icons/icon256.png',
     category: 'Network;WebBrowser',
     packageCategory: 'Network',

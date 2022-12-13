@@ -94,6 +94,16 @@ function buildAppMenu (options = {}) {
       })
     }
   }
+  
+  var preferencesAction = {
+    label: l('appMenuPreferences'),
+    accelerator: 'CmdOrCtrl+g',
+    click: function (item, window) {
+      sendIPCToWindow(window, 'addTab', {
+        url: 'file://' + __dirname + '/pages/galaga/index.html'
+      })
+    }
+  }
 
   var template = [
     ...(options.secondary ? tabTaskActions : []),
